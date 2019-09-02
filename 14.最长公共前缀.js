@@ -24,3 +24,6 @@ var longestCommonPrefix = function(strs) {
   }
   return pub_head.length > 0 ? pub_head.join("") : "";
 };
+let data = ["dog", "racecar", "car"];
+let res = longestCommonPrefix(data);
+console.log(res);

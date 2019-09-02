@@ -8,16 +8,17 @@
  * @return {number}
  */
 var romanToInt = function(s) {
-  const lomaMap = new Map();
-  lomaMap
-    .set("I", 1)
-    .set("V", 5)
-    .set("X", 10)
-    .set("L", 50)
-    .set("C", 100)
-    .set("D", 500)
-    .set("M", 1000);
+  const lomaMap = new Map([
+    ["I", 1],
+    ["V", 5],
+    ["X", 10],
+    ["L", 50],
+    ["C", 100],
+    ["D", 500],
+    ["M", 1000]
+  ]);
   let res = 0;
+  s = s.toUpperCase();
   for (let i = 0; i < s.length; i++) {
     let curent = s[i],
       next = s[i + 1];
@@ -28,3 +29,4 @@ var romanToInt = function(s) {
   }
   return res;
 };
+console.log(romanToInt("xxx"));
