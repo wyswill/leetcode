@@ -8,12 +8,13 @@
  * @param {number} val
  * @return {number}
  */
-var removeElement = function(nums, val) {
+var removeElement = function (nums, val) {
   for (let i = 0; i < nums.length; i++) {
     let ele = nums[i];
-    ele == val ? nums.splice(i, 1) : "";
+    ele == val ? (nums.splice(i, 1), i--) : "";
   }
-  return nums;
+  console.log(nums);
+
+  return nums.length;
 };
-let res = removeElement([3, 2, 2, 3],3);
-console.log(res);
+removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2);
