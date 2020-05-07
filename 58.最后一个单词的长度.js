@@ -15,4 +15,4 @@ var lengthOfLastWord = function(s) {
   }
   return length;
 };
-console.log(lengthOfLastWord("Hello World"));
+console.log(lengthOfLastWord("a "));
