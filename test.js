@@ -1,5 +1,11 @@
 console.time();
-let matrix = [["1", "0", "1", "0", "0"], ["1", "0", "1", "1", "1"], ["1", "1", "1", "1", "1"], ["1", "0", "0", "1", "0"]];
+let matrix = [
+  ["1", "0", "1", "0", "0"],
+  ["1", "0", "1", "1", "0"],
+  ["1", "1", "1", "1", "1"],
+  ["1", "0", "1", "1", "0"],
+  ["1", "0", "0", "1", "0"]
+];
 
 function f() {
   let res = 0;
@@ -9,7 +15,7 @@ function f() {
       let current = matrix[ x ][ y ];//当前的值
       //只有在当前值等于关键值的时候才进行矩阵扫描
       if (current === key) {
-        scan(( x ), ( y ));
+        scan(x, y);
       }
     }
   }
@@ -37,12 +43,7 @@ function f() {
    */
   function scan(x, y) {
     try {
-      if (
-        ( Number(matrix[ x + 1 ][ y ]) && Number(matrix[ x ][ y + 1 ]) && Number(matrix[ x + 1 ][ y + 1 ]) ) ||
-        ( Number(matrix[ x - 1 ][ y ]) && Number(matrix[ x ][ y + 1 ]) && Number(matrix[ x - 1 ][ y + 1 ]) ) ||
-        ( Number(matrix[ x - 1 ][ y ]) && Number(matrix[ x ][ y - 1 ]) && Number(matrix[ x - 1 ][ y - 1 ]) ) ||
-        ( Number(matrix[ x + 1 ][ y ]) && Number(matrix[ x ][ y + 1 ]) && Number(matrix[ x + 1 ][ y + 1 ]) )
-      ) res++;
+      if (Number(matrix[ x + 1 ][ y ]) && Number(matrix[ x ][ y + 1 ]) && Number(matrix[ x + 1 ][ y + 1 ])) res += 4;
     } catch (e) {
     }
   }
