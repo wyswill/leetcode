@@ -7,7 +7,7 @@
  * @param {number} x
  * @return {number}
  */
-var reverse = function(x) {
+var reverse = function (x) {
   let isFu = false;
   if (x < 0) {
     x = -x;
@@ -31,3 +31,4 @@ var reverse = function(x) {
   if (r > Math.pow(2, 31) - 1 || r < -Math.pow(2, 31)) return 0;
   else return r;
 };
+console.log(reverse(-123));

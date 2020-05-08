@@ -43,12 +43,12 @@ function f() {
    */
   function scan(x, y) {
     try {
-      if (Number(matrix[ x + 1 ][ y ]) && Number(matrix[ x ][ y + 1 ]) && Number(matrix[ x + 1 ][ y + 1 ])) res += 4;
+      if (Number(matrix[ x + 1 ][ y ]) && Number(matrix[ x ][ y + 1 ]) && Number(matrix[ x + 1 ][ y + 1 ])) res++;
     } catch (e) {
     }
   }
 
-  return res;
+  return res * 2;
 }
 
 console.log(f());
