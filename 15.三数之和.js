@@ -7,25 +7,21 @@
  * @param {number[]} nums
  * @return {number[][]}
  */
-var threeSum = function(nums) {
-  let res = [],
-    t = {};
+var threeSum = function (nums) {
+  let res = [];
   for (let i = 0; i < nums.length; i++) {
-    for (let j = 0; j < nums.length; j++) {
-      for (let k = 0; k < nums.length; k++) {
-        let data = nums[i] + nums[j] + nums[k],
-          key = `${nums[i]}${nums[j]}${nums[k]}`;
+    for (let j = i; j < nums.length - i; j++) {
+      for (let k = j; k < nums.length - j; k++) {
+        let data = nums[i] + nums[j] + nums[k];
         if (data == 0) {
-          if (!t[key]) {
-            res.push([nums[i], nums[j], nums[k]]);
-            t[key] = true;
-          }
+          const tp = nums[i];
+          // if (!(nums[j] == tp && nums[k] == tp))
+          res.push([nums[i], nums[j], nums[k]]);
         }
       }
     }
   }
-  console.log(t);
-  console.log(res);
+  return res;
 };
-let nums = [-1, 0, 1, 2, -1, -4];
-threeSum(nums);
+let nums = [-1,0,1,2,-1,-4];
+console.log(threeSum(nums));
