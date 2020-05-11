@@ -7,13 +7,12 @@
  * @param {number} x
  * @return {boolean}
  */
-var isPalindrome = function(x) {
+var isPalindrome = function (x) {
   let temp = String(x);
   let tempArr = [];
   for (let i = 0; i < temp.length; i++) {
     tempArr.push(temp[i]);
   }
   let res = tempArr.reverse().join("");
-  if (res == temp) return true;
-  else return false;
+  return res == temp;
 };

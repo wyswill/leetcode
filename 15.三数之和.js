@@ -15,13 +15,13 @@ var threeSum = function (nums) {
         let data = nums[i] + nums[j] + nums[k];
         if (data == 0) {
           const tp = nums[i];
-          // if (!(nums[j] == tp && nums[k] == tp))
-          res.push([nums[i], nums[j], nums[k]]);
+          if (!(nums[i] === nums[j] && nums[i] === nums[k]))
+            res.push([nums[i], nums[j], nums[k]]);
         }
       }
     }
   }
   return res;
 };
-let nums = [-1,0,1,2,-1,-4];
+let nums = [-1, 0, 1, 2, -1, -4];
 console.log(threeSum(nums));
