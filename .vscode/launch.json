@@ -11,7 +11,7 @@
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}\\tests\\tree.ts",
+      "program": "${workspaceFolder}\\144.二叉树的前序遍历.js",
       "outFiles": [
         "${workspaceFolder}/**/*.js"
       ]
