@@ -26,7 +26,6 @@ const tree = {
     }
   }
 };
-
 var levelOrder = function (root) {
   const ret = []; //结果数组
   if (!root) return ret;
