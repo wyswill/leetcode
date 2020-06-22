@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03e46a6a-5ab9-4cfe-a64b-3f489fcbe260" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/238.除自身以外数组的乘积.js" beforeDir="false" afterPath="$PROJECT_DIR$/238.除自身以外数组的乘积.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +28,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
+  <component name="RunManager">
+    <configuration name="238.除自身以外数组的乘积.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/238.除自身以外数组的乘积.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.238.除自身以外数组的乘积.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -37,10 +49,31 @@
       <option name="presentableId" value="Default" />
       <updated>1590068759628</updated>
       <workItem from="1590068763163" duration="59000" />
+      <workItem from="1591269495613" duration="64000" />
+      <workItem from="1591322287132" duration="7000" />
+      <workItem from="1592361503875" duration="6000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1852" height="290" key="GridCell.Tab.0.bottom" timestamp="1591269558810">
+      <screen x="47" y="23" width="1873" height="1057" />
+    </state>
+    <state width="1852" height="290" key="GridCell.Tab.0.bottom/47.23.1873.1057@47.23.1873.1057" timestamp="1591269558810" />
+    <state width="1852" height="290" key="GridCell.Tab.0.center" timestamp="1591269558809">
+      <screen x="47" y="23" width="1873" height="1057" />
+    </state>
+    <state width="1852" height="290" key="GridCell.Tab.0.center/47.23.1873.1057@47.23.1873.1057" timestamp="1591269558809" />
+    <state width="1852" height="290" key="GridCell.Tab.0.left" timestamp="1591269558809">
+      <screen x="47" y="23" width="1873" height="1057" />
+    </state>
+    <state width="1852" height="290" key="GridCell.Tab.0.left/47.23.1873.1057@47.23.1873.1057" timestamp="1591269558809" />
+    <state width="1852" height="290" key="GridCell.Tab.0.right" timestamp="1591269558809">
+      <screen x="47" y="23" width="1873" height="1057" />
+    </state>
+    <state width="1852" height="290" key="GridCell.Tab.0.right/47.23.1873.1057@47.23.1873.1057" timestamp="1591269558809" />
   </component>
 </project>

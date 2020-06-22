@@ -9,22 +9,18 @@
  * @param {number[]} nums
  * @return {number[]}
  */
-const input = [0, 0];
 var productExceptSelf = function (nums) {
   const res = [];
-  let ji = nums[0];
   for (let i = 0; i < nums.length; i++) {
-    let element = nums[i];
-    if (element > 0) ji = element * ji;
-    else ji = 0;
-  }
-  for (let i = 0; i < nums.length; i++) {
-    let element = nums[i];
-    if (element == 0) res[i] = 0;
-    else res[i] = ji / element;
+    let _tempValue = 1;
+    for (let j = 0; j < nums.length; j++) {
+      if (j == i) continue;
+      let currentVal = nums[j];
+      _tempValue *= currentVal;
+    }
+    res[i] = _tempValue;
   }
   return res;
 };
-console.log(productExceptSelf(input));
-
 // @lc code=end
+productExceptSelf([1, 2, 3, 4]);
