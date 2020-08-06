@@ -7,14 +7,16 @@
  * @param {string} str
  * @return {number}
  */
-var myAtoi = function(str) {
+var myAtoi = function (str) {
+  str = str.trim();
   let i = 0,
     res = "",
     regex = /\d/,
     symbo = /(\-)||(\+)/,
     max_mun = Math.pow(2, 31) - 1,
-    min_mun = Math.pow(-2, 31);
-  if (!symbo.test(str[0]) && !regex.test(str[0])) return 0;
+    min_mun = Math.pow(-2, 31),
+    first = str[0];
+  if (!(symbo.test(first) && regex.test(first))) return 0;
   while (i < str.length) {
     let curet = str[i];
     if (curet == "-" || curet == "+" || regex.test(curet)) {
@@ -24,7 +26,6 @@ var myAtoi = function(str) {
   }
   if (res > max_mun) return max_mun;
   if (res < min_mun) return min_mun;
-  return res;
+  return Number(res);
 };
-let test = "42";
-console.log(myAtoi(test));
+console.log(myAtoi("words and 987"));
