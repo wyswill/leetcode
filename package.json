@@ -2,7 +2,7 @@
   "name": "leetcode",
   "version": "1.0.0",
   "description": "leetcode习题练习",
-  "main": "1.两数之和.js",
+  "main": "leetcode/editor/cn/1.两数之和.js",
   "directories": {
     "test": "tests"
   },
