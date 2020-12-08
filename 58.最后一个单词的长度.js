@@ -7,12 +7,19 @@
  * @param {string} s
  * @return {number}
  */
-var lengthOfLastWord = function(s) {
-  let wordArr = s.split(" ");
-  let length = 0;
-  if (wordArr.length) {
-    length = wordArr[wordArr.length - 1].length;
+var lengthOfLastWord = function (s) {
+  let endInd = 0,
+    words = [];
+
+  while (endInd < s.length) {
+    let currentChart = s[endInd];
+    if (currentChart == " ") {
+      words.push(endInd);
+    }
+    endInd++;
   }
-  return length;
+  let ind = words[words.length-1];
+  console.log(ind);
+  console.log(s.slice(ind, s.length));
 };
-console.log(lengthOfLastWord("a "));
+console.log(lengthOfLastWord("    basdfasdf asdf  asdf"));
