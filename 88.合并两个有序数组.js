@@ -21,6 +21,7 @@ var merge = function (nums1, m, nums2, n) {
       }
     }
   }
+  console.log(nums1);
 };
 let nums1 = [1, 2, 3, 0, 0, 0],
   nums2 = [2, 5, 6],
